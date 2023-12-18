@@ -1,0 +1,35 @@
+<div class="container container-cards">
+    <h1>Random Pokemon Team </h1>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 p-3">
+            <app-pokemon-card 
+                *ngIf="chosenFirePokemon() != ''"
+                [type]="'fire'"
+                [pokemonId]="chosenFirePokemon()"> 
+            </app-pokemon-card>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 p-3">
+            <app-pokemon-card 
+                *ngIf="chosenWaterPokemon() != ''"
+                [type]="'water'"
+                [pokemonId]="chosenWaterPokemon()"> 
+            </app-pokemon-card>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 p-3">
+            <app-pokemon-card 
+                *ngIf="chosenElectricPokemon() != ''"
+                [type]="'electric'"
+                [pokemonId]="chosenElectricPokemon()"> 
+            </app-pokemon-card>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 p-3">
+            <app-pokemon-card 
+                 *ngIf="chosenRockPokemon() != ''"
+                [type]="'rock'"
+                [pokemonId]="chosenRockPokemon()"> 
+            </app-pokemon-card>
+        </div>
+       
+    </div>
+   
+</div>
